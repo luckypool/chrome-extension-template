@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name"            : "__MSG_extName__",
+    "description"     : "__MSG_extDescription__",
+    "version"         : "0.0.1",
+    "author"          : "luckypool",
+    "default_locale"  : "ja",
+
+    "icons": {
+        "16" : "icon/16.png",
+        "48" : "icon/48.png",
+        "128": "icon/128.png"
+    },
+
+    "browser_action": {
+        "default_icon": {
+            "16" : "icon/16.png",
+            "48" : "icon/48.png"
+        },
+        "default_title": "Google Mail",
+        "default_popup": "html/popup.html"
+    },
+
+    "options_page": "html/options.html",
+
+    "background": {
+        "scripts": [
+            "js/lib/jquery-2.0.3.min.js",
+            "js/background.js"
+        ],
+        "persistent": false
+    },
+
+    "permissions": [
+        "notifications",
+        "https://*/*",
+        "http://*/*"
+    ]
+}
+
